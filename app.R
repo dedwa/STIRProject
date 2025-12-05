@@ -1,3 +1,5 @@
+renv::snapshot(force = TRUE)
+
 #install.packages("dplyr")
 #install.packages("ggplot2")
 #install.packages("tidyverse")
