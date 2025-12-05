@@ -32,8 +32,15 @@ library(shiny)
 library(plotly)
 library(bslib)
 library(gganimate)
-library(waffle)
 library(rsconnect)
+
+
+renv::install("hrbrmstr/waffle")
+
+# Update your lockfile
+renv::snapshot()
+
+library(waffle)
 
 `%||%` <- function(x, y) if (is.null(x)) y else x
 
