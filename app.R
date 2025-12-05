@@ -42,6 +42,8 @@ renv::snapshot()
 
 library(waffle)
 
+rsconnect::writeManifest()
+
 `%||%` <- function(x, y) if (is.null(x)) y else x
 
 # Data
@@ -957,4 +959,3 @@ server <- function(input, output, session) {
 
 shinyApp(ui = ui, server = server)
 
-rsconnect::writeManifest()

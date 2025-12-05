@@ -9,6 +9,11 @@
     "content_category": null,
     "has_parameters": false
   },
+  "environment": {
+    "r": {
+      "requires": "~=4.5.0"
+    }
+  },
   "packages": {
     "DBI": {
       "Source": "CRAN",
@@ -3527,25 +3532,24 @@
         "Description": "Square pie charts (a.k.a. waffle charts) can be used\n    to communicate parts of a whole for categorical quantities. To emulate the\n    percentage view of a pie chart, a 10x10 grid should be used with each square\n    representing 1% of the total. Modern uses of waffle charts do not\n    necessarily adhere to this rule and can be created with a grid of any\n    rectangular shape. Best practices suggest keeping the number of categories\n    small, just as should be done when creating pie charts. Tools are provided\n    to create waffle charts as well as stitch them together, and to use glyphs\n    for making isotype pictograms.",
         "Encoding": "UTF-8",
         "Copyright": "file inst/COPYRIGHTS",
-        "Suggests": "knitr, rmarkdown, dplyr, ggthemes",
-        "Depends": "R (>= 3.5.0), ggplot2 (>= 3.1.0)",
+        "Suggests": "knitr,\nrmarkdown,\ndplyr,\nggthemes",
+        "Depends": "R (>= 3.5.0),\nggplot2 (>= 3.1.0)",
         "License": "GPL (>= 2)",
-        "Imports": "RColorBrewer, grid, gridExtra, gtable, extrafont, curl,\nstringr, stats, htmlwidgets, DT, plyr, rlang, utils",
+        "Imports": "RColorBrewer,\ngrid,\ngridExtra,\ngtable,\nextrafont,\ncurl,\nstringr,\nstats,\nhtmlwidgets,\nDT,\nplyr,\nrlang,\nutils",
         "RoxygenNote": "7.2.3",
+        "Author": "Bob Rudis [aut, cre] (ORCID: <https://orcid.org/0000-0001-5670-2640>),\n  Dave Gandy [aut] (Font Awesome),\n  Andrew Breza [ctb],\n  Matthias Jütte [ctb],\n  Paul Campbell [ctb] (geom_bar flip)",
+        "Built": "R 4.5.1; ; 2025-12-05 00:31:49 UTC; windows",
         "RemoteType": "github",
         "RemoteHost": "api.github.com",
-        "RemoteRepo": "waffle",
         "RemoteUsername": "hrbrmstr",
-        "RemoteRef": "HEAD",
+        "RemoteRepo": "waffle",
+        "RemoteRef": "master",
         "RemoteSha": "767875bf15f0982f5deb6ca3be1b99b830d2b074",
+        "GithubHost": "api.github.com",
         "GithubRepo": "waffle",
         "GithubUsername": "hrbrmstr",
-        "GithubRef": "HEAD",
-        "GithubSHA1": "767875bf15f0982f5deb6ca3be1b99b830d2b074",
-        "NeedsCompilation": "no",
-        "Packaged": "2025-12-04 22:36:46 UTC; Edwar",
-        "Author": "Bob Rudis [aut, cre] (ORCID: <https://orcid.org/0000-0001-5670-2640>),\n  Dave Gandy [aut] (Font Awesome),\n  Andrew Breza [ctb],\n  Matthias Jütte [ctb],\n  Paul Campbell [ctb] (geom_bar flip)",
-        "Built": "R 4.5.1; ; 2025-12-04 22:36:47 UTC; windows"
+        "GithubRef": "master",
+        "GithubSHA1": "767875bf15f0982f5deb6ca3be1b99b830d2b074"
       }
     },
     "withr": {
@@ -3712,7 +3716,7 @@
   },
   "files": {
     "app.R": {
-      "checksum": "f952475f36dfeb1ccc8a3a7735b8197f"
+      "checksum": "fbec917ece1f95a248900413bf116fe4"
     },
     "census_16_metro_trim.csv": {
       "checksum": "d27ec01261d85d065faa7b4da14f711b"
@@ -3725,6 +3729,9 @@
     },
     "census_21_other_trim.csv": {
       "checksum": "42d7d22fd0086c45399f8a6ae4a0f347"
+    },
+    "renv.lock": {
+      "checksum": "f26a76a4e3d343bd4ca563fc93ed969b"
     }
   },
   "users": null
